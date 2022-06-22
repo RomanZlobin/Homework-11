@@ -16,17 +16,17 @@ public class Main {
         Affiche eleven = new Affiche(11, "Mne ne bolno", "melodrama");
 
         FilmManager manager = new FilmManager();
-        manager.add (one);
-        manager.add (two);
-        manager.add (three);
-        manager.add (four);
-        manager.add (five);
-        manager.add (six);
-        manager.add (seven);
-        manager.add (eight);
-        manager.add (nine);
-        manager.add (ten);
-        manager.add (eleven);
+        manager.add(one);
+        manager.add(two);
+        manager.add(three);
+        manager.add(four);
+        manager.add(five);
+        manager.add(six);
+        manager.add(seven);
+        manager.add(eight);
+        manager.add(nine);
+        manager.add(ten);
+        manager.add(eleven);
 
         Affiche[] all = manager.findAll();
         Affiche[] last = manager.findLast();

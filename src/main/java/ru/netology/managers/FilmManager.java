@@ -4,8 +4,9 @@ import ru.netology.domain.Affiche;
 
 
 public class FilmManager {
+    private Affiche[] movies = new Affiche[0];
 
-    int resultLength = 10;
+    private int resultLength = 10;
 
     public FilmManager() {
     }
@@ -13,8 +14,6 @@ public class FilmManager {
     public FilmManager(int resultLength) {
         this.resultLength = resultLength;
     }
-
-    private Affiche[] movies = new Affiche[0];
 
     public void add(Affiche movie) {
         int length = movies.length + 1;
@@ -34,11 +33,11 @@ public class FilmManager {
             resultLength = movies.length;
         }
 
-            Affiche[] result = new Affiche[resultLength];
-            for (int i = 0; i < result.length; i++) {
-                int index = movies.length - i - 1;
-                result[i] = movies[index];
-            }
-            return result;
+        Affiche[] result = new Affiche[resultLength];
+        for (int i = 0; i < result.length; i++) {
+            int index = movies.length - i - 1;
+            result[i] = movies[index];
         }
+        return result;
     }
+}

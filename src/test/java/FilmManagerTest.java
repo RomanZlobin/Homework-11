@@ -20,15 +20,15 @@ public class FilmManagerTest {
     @Test
     public void testFindLastStandardLessThanTen() {
         FilmManager manager = new FilmManager();
-        manager.add (one);
-        manager.add (two);
-        manager.add (three);
-        manager.add (four);
-        manager.add (five);
-        manager.add (six);
-        manager.add (seven);
-        manager.add (eight);
-        manager.add (nine);
+        manager.add(one);
+        manager.add(two);
+        manager.add(three);
+        manager.add(four);
+        manager.add(five);
+        manager.add(six);
+        manager.add(seven);
+        manager.add(eight);
+        manager.add(nine);
 
 
         Affiche[] actual = manager.findLast();
@@ -40,17 +40,17 @@ public class FilmManagerTest {
     public void testFindLastWithConst() {
 
         FilmManager manager = new FilmManager(3);
-        manager.add (one);
-        manager.add (two);
-        manager.add (three);
-        manager.add (four);
-        manager.add (five);
-        manager.add (six);
-        manager.add (seven);
-        manager.add (eight);
-        manager.add (nine);
-        manager.add (ten);
-        manager.add (eleven);
+        manager.add(one);
+        manager.add(two);
+        manager.add(three);
+        manager.add(four);
+        manager.add(five);
+        manager.add(six);
+        manager.add(seven);
+        manager.add(eight);
+        manager.add(nine);
+        manager.add(ten);
+        manager.add(eleven);
 
         Affiche[] actual = manager.findLast();
         Affiche[] expected = {eleven, ten, nine};
@@ -60,17 +60,17 @@ public class FilmManagerTest {
     @Test
     public void testFindLastStandard() {
         FilmManager manager = new FilmManager();
-        manager.add (one);
-        manager.add (two);
-        manager.add (three);
-        manager.add (four);
-        manager.add (five);
-        manager.add (six);
-        manager.add (seven);
-        manager.add (eight);
-        manager.add (nine);
-        manager.add (ten);
-        manager.add (eleven);
+        manager.add(one);
+        manager.add(two);
+        manager.add(three);
+        manager.add(four);
+        manager.add(five);
+        manager.add(six);
+        manager.add(seven);
+        manager.add(eight);
+        manager.add(nine);
+        manager.add(ten);
+        manager.add(eleven);
 
         Affiche[] actual = manager.findLast();
         Affiche[] expected = {eleven, ten, nine, eight, seven, six, five, four, three, two};
