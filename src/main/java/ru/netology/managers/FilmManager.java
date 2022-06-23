@@ -6,9 +6,10 @@ import ru.netology.domain.Affiche;
 public class FilmManager {
     private Affiche[] movies = new Affiche[0];
 
-    private int resultLength = 10;
+    private int resultLength;
 
     public FilmManager() {
+        resultLength = 10;
     }
 
     public FilmManager(int resultLength) {
@@ -29,11 +30,12 @@ public class FilmManager {
     }
 
     public Affiche[] findLast() {
-        if (resultLength > movies.length) {
-            resultLength = movies.length;
+        Affiche[] result;
+        if (resultLength < movies.length) {
+            result = new Affiche[resultLength];
+        } else {
+            result = new Affiche[movies.length];
         }
-
-        Affiche[] result = new Affiche[resultLength];
         for (int i = 0; i < result.length; i++) {
             int index = movies.length - i - 1;
             result[i] = movies[index];
